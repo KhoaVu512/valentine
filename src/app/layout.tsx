@@ -9,7 +9,9 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Valentine',
   description: 'Will you be my Valentine?',
-
+  openGraph: {
+    images: 'static/meta-img.jpg',
+  },
 }
 
 export default function RootLayout({
@@ -29,10 +31,6 @@ export default function RootLayout({
           type="text/javascript"
           src="static/script.js"
         ></Script>
-        <meta
-          property="og:image"
-          content="static/meta-img.jpg"
-        />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
