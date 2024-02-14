@@ -9,9 +9,6 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Valentine',
   description: 'Will you be my Valentine?',
-  openGraph: {
-    images: 'static/meta-img.jpg',
-  },
 }
 
 export default function RootLayout({
@@ -25,6 +22,10 @@ export default function RootLayout({
         <link
           rel="heart icon"
           href={favicon.src}
+        />
+        <meta
+          property="og:image"
+          content="https://i.pinimg.com/564x/70/4a/52/704a5205ba5f189d9376f1d1e502be41.jpg"
         />
 
         <Script
